@@ -12,4 +12,5 @@ cd noofiles/noofiles
 
 noo register api api.noofile.yml
 noo register bot bot.noofile.yml
+noo register worker worker.noofile.yml
 ```
