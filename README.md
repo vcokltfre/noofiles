@@ -8,9 +8,9 @@ A collection of files for my project [noo](https://github.com/vcokltfre/noo).
 pip install git+https://github.com/vcokltfre/noo
 git clone https://github.com/vcokltfre/noofiles
 
-cd noofiles/noofiles
+cd noofiles
 
-noo register api api.noofile.yml
-noo register bot bot.noofile.yml
-noo register worker worker.noofile.yml
+noo register api ./noofiles/api.noofile.yml
+noo register bot ./noofiles/bot.noofile.yml
+noo register worker ./noofiles/worker.noofile.yml
 ```
