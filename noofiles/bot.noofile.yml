@@ -55,3 +55,8 @@ steps:
           - README.md
         src: disnake-template
         dest: $$noo:name
+      - action: replace
+        files:
+          - README.md
+        src: A template bot for Disnake.
+        dest: $$var:description
