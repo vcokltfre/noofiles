@@ -1,0 +1,42 @@
+name: Svelte Template
+remote: github:vcokltfre/svelte-template
+
+read:
+  - name: description
+    prompt: "Enter project description"
+  - name: author
+    prompt: "Enter author name"
+    default: vcokltfre
+
+steps:
+  - name: Update package.json
+    actions:
+      - action: replace
+        files:
+          - package.json
+        src: "\"svelte-template\""
+        dest: "\"$$noo:name\""
+  - name: Update license
+    actions:
+      - action: replace
+        files:
+          - LICENSE
+        src: vcokltfre
+        dest: $$var:author
+      - action: replace
+        files:
+          - LICENSE
+        src: "2022"
+        dest: $$noo:year
+  - name: Update readme
+    actions:
+      - action: replace
+        files:
+          - README.md
+        src: svelte-template
+        dest: $$noo:name
+      - action: replace
+        files:
+          - README.md
+        src: A personalised Svelte template project.
+        dest: $$var:description
