@@ -1,5 +1,5 @@
 name: Bot Template
-remote: github:vcokltfre/disnake-template
+remote: git:vcokltfre/disnake-template
 
 read:
   - name: description

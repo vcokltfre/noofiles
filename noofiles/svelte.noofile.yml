@@ -1,5 +1,5 @@
 name: Svelte Template
-remote: github:vcokltfre/svelte-template
+remote: git:vcokltfre/svelte-template
 
 read:
   - name: description

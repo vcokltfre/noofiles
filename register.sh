@@ -1,4 +1,4 @@
-noo register api noofiles/api.noofile.yml
-noo register bot noofiles/bot.noofile.yml
-noo register worker noofiles/worker.noofile.yml
-noo register svelte noofiles/svelte.noofile.yml
+noo reg add api noofiles/api.noofile.yml
+noo reg add bot noofiles/bot.noofile.yml
+noo reg add worker noofiles/worker.noofile.yml
+noo reg add svelte noofiles/svelte.noofile.yml

@@ -1,5 +1,5 @@
 name: API Template
-remote: github:vcokltfre/api-template
+remote: git:vcokltfre/api-template
 
 read:
   - name: description
@@ -16,6 +16,9 @@ read:
 steps:
   - name: Update poetry
     actions:
+      - action: rename
+        file: poetry.lock
+        dest: lmao.lock
       - action: replace
         files:
           - pyproject.toml

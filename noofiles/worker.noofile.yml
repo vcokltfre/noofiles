@@ -1,5 +1,5 @@
 name: Worker Template
-remote: github:vcokltfre/worker-template
+remote: git:vcokltfre/worker-template
 
 read:
   - name: description
