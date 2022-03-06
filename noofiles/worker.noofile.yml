@@ -1,5 +1,6 @@
 name: Worker Template
 remote: git:vcokltfre/worker-template
+noo_version: 2
 
 read:
   - name: description

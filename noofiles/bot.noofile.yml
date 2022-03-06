@@ -1,5 +1,6 @@
 name: Bot Template
 remote: git:vcokltfre/disnake-template
+noo_version: 2
 
 read:
   - name: description

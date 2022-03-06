@@ -1,5 +1,6 @@
 name: Svelte Template
 remote: git:vcokltfre/svelte-template
+noo_version: 2
 
 read:
   - name: description
