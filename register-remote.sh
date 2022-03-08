@@ -2,3 +2,4 @@ noo reg add api https://raw.githubusercontent.com/vcokltfre/noofiles/master/noof
 noo reg add bot https://raw.githubusercontent.com/vcokltfre/noofiles/master/noofiles/bot.noofile.yml
 noo reg add worker https://raw.githubusercontent.com/vcokltfre/noofiles/master/noofiles/worker.noofile.yml
 noo reg add svelte https://raw.githubusercontent.com/vcokltfre/noofiles/master/noofiles/svelte.noofile.yml
+noo reg add modmail https://raw.githubusercontent.com/vcokltfre/noofiles/master/noofiles/modmail.noofile.yml

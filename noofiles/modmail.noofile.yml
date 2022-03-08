@@ -1,0 +1,43 @@
+name: "Deploy Modmail"
+remote: git:Dragory/modmailbot
+noo_version: 2
+
+read:
+  - name: port
+    prompt: Enter port
+    default: "8080"
+  - name: token
+    prompt: Enter token
+  - name: prefix
+    prompt: Enter prefix
+    default: "!"
+  - name: main_guild
+    prompt: Enter main guild ID
+  - name: inbox_guild
+    prompt: Enter inbox guild ID
+  - name: domain
+    prompt: Enter domain
+  - name: log_channel
+    prompt: Enter log channel ID
+
+steps:
+  - name: Configure Modmail
+    actions:
+      - action: create
+        file: config.ini
+        content: |
+          token = $$var:token
+          prefix = $$var:prefix
+          mainServerId = $$var:main_guild
+          inboxServerId = $$var:inbox_guild
+          logChannelId = $$var:log_channel
+          url = https://$$var:domain
+          port = $$var:port
+
+          inboxServerPermission = manageMessages
+          status = DM to contact the mods
+          responseMessage = Thank you for your message! Our mod team will reply to you here as soon as possible.
+  - name: Install Dependencies
+    actions:
+      - action: command
+        command: npm ci
