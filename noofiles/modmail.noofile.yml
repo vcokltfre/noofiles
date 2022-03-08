@@ -19,6 +19,9 @@ read:
     prompt: Enter domain
   - name: log_channel
     prompt: Enter log channel ID
+  - name: permission
+    prompt: Enter inbox guild permission
+    default: "manageMessages"
 
 steps:
   - name: Configure Modmail
@@ -34,7 +37,7 @@ steps:
           url = https://$$var:domain
           port = $$var:port
 
-          inboxServerPermission = manageMessages
+          inboxServerPermission = $$var:permission
           status = DM to contact the mods
           responseMessage = Thank you for your message! Our mod team will reply to you here as soon as possible.
   - name: Install Dependencies
