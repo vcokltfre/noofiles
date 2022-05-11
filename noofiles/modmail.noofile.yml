@@ -1,5 +1,5 @@
 name: "Deploy Modmail"
-remote: git:Dragory/modmailbot
+remote: git:https://github.com/Dragory/modmailbot.git
 noo_version: 2
 
 read:
