@@ -5,9 +5,6 @@ noo_version: 2
 read:
   - name: description
     prompt: "Enter project description"
-  - name: zone_id
-    prompt: "Enter zone ID"
-    default: changeme
   - name: account_id
     prompt: "Enter account ID"
     default: c8526a45c47706d6c69f8d997004bd7a
@@ -62,11 +59,6 @@ steps:
           - wrangler.toml
         src: worker-template
         dest: $$noo:name
-      - action: replace
-        files:
-          - wrangler.toml
-        src: "zone_id = \"\""
-        dest: "zone_id = \"$$var:zone_id\""
       - action: replace
         files:
           - wrangler.toml
